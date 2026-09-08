@@ -70,7 +70,9 @@
   .work-filters{display:flex; gap:22px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em;}
   .work-filters button{padding-bottom:4px; border-bottom:2px solid transparent; opacity:0.5;}
   .work-filters button.active{opacity:1; border-color:var(--rust);}
-  .carousel-track { display:flex; gap:24px; padding-bottom:16px; width: max-content; }
+  .work-head + .carousel-track,
+  .carousel-track { max-width:100%; }
+  .carousel-track { display:flex; gap:24px; padding-bottom:16px; width: max-content; overflow-x:auto; scroll-behavior:smooth; -webkit-overflow-scrolling:touch; }
   .carousel-track::-webkit-scrollbar{display:none;}
   .carousel-track.dragging{cursor:grabbing;}
   .work-card{flex:0 0 340px; scroll-snap-align:start;}
